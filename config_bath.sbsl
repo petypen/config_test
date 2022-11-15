@@ -91,8 +91,7 @@
 
     знч ProgramFiles = СредаИсполнения.ПолучитьПеременную("ProgramFiles")
     пер КомандаЗапуска = "%ProgramFiles\\1cv8\\%ВерсияПлатформы\\bin\\ibcmd.exe"
-    пер Аргументы =
-        ["infobase", "config", "export", "%CF_FILES", "--db-path=%ИБ", "--user=admin", "--password=123"]
+    пер Аргументы = ["infobase", "config", "export", "%CF_FILES", "--db-path=%ИБ", "--user=admin", "--password=123"]
     пер АвтономныйСервер = новый ПроцессОс(КомандаЗапуска, Аргументы, Ложь)
 
     пер ВремяСтарта: Время = Время.Сейчас()
